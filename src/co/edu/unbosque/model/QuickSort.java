@@ -1,4 +1,7 @@
+package co.edu.unbosque.model;
+
 import java.util.Random;
+import java.util.Scanner;
 
 public class QuickSort {
 
@@ -66,7 +69,11 @@ public class QuickSort {
 
     public static void main(String args[]) {
     	int arr[];
-    	int tam=10;
+    	
+    	Scanner sc=new Scanner (System.in);
+    	System.out.println("Cuantos numeros desea que contenga el arreglo ?");
+    	int a=sc.nextInt();
+    	int tam=a;
     	arr = new int[tam];
     	for(int i = 0; i < arr.length ; i++) {
     		
