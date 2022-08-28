@@ -8,22 +8,20 @@ public class Controller {
 	
 	private VistaVentanas vista;
 	private QuickSort quick;
-	private Numeros num;
+
 	
 	public Controller() {
 		vista = new VistaVentanas();
-		num=new Numeros();
+
 		quick=new QuickSort();
 		funcionar();
 	}
 	
 	public void funcionar() {
 
+		quick.principal();
 // System.out.println(num.generarAleatorio());
  
-		num.inicializarArreglo();
-		
-		quick.principal(null);
 	System.out.println("----------------------------");
 
 	}

@@ -1,12 +1,8 @@
-package co.edu.unbosque.model;
-
-import java.util.ArrayList;
+import java.util.Random;
 
 public class QuickSort {
-	
-	
 
-	  /* Esta función toma el ultimo elemento como
+    /* Esta función toma el ultimo elemento 1como
     pivote, coloca el pivote en la posición correcta
     en el array ordenado, y coloca todos los más 
     pequeñps (Más pequeños que el pivote) a la izquierda
@@ -56,13 +52,30 @@ public class QuickSort {
         }
         System.out.println();
     }
+    
+	public static int generarAleatorio() {
+		int min = 1;
+		int max = 1000;
+		Random random = new Random();
+		int numero= random.nextInt(max + min) + min;
 
-    public void principal(String args[]) {
-        int arr[] =listaNumeros;
+		return numero;
+	}
+	
+	
+
+    public static void main(String args[]) {
+    	int arr[];
+    	int tam=10;
+    	arr = new int[tam];
+    	for(int i = 0; i < arr.length ; i++) {
+    		
+    		arr[i] =generarAleatorio();
+    	
+    		}
         int n = arr.length;
         sort(arr, 0, n - 1);
         System.out.println("Array ordenado");
         printArray(arr);
     }
-
 }
