@@ -1,7 +1,11 @@
 package co.edu.unbosque.model;
 
+import java.util.ArrayList;
+
 public class QuickSort {
 	
+	
+
 	  /* Esta función toma el ultimo elemento como
     pivote, coloca el pivote en la posición correcta
     en el array ordenado, y coloca todos los más 
@@ -53,8 +57,8 @@ public class QuickSort {
         System.out.println();
     }
 
-    public static void main(String args[]) {
-        int arr[] = {10, 7, 8, 9, 1, 5};
+    public void principal(String args[]) {
+        int arr[] =listaNumeros;
         int n = arr.length;
         sort(arr, 0, n - 1);
         System.out.println("Array ordenado");
