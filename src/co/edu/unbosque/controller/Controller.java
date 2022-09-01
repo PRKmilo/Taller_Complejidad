@@ -19,9 +19,7 @@ public class Controller {
 	public void funcionar() {
 
 		quick.funcionar();
-// System.out.println(num.generarAleatorio());
- 
-	System.out.println("----------------------------");
+
 
 	}
 
