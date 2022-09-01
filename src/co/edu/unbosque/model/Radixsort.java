@@ -58,7 +58,10 @@ public class Radixsort {
         // exp is 10^i where i is current digit number
         for (int exp = 1; m / exp > 0; exp *= 10)
             countSort(arreglo, n, exp);
+            
         long endTime = System.currentTimeMillis() - startTime;
+        radixsort(arreglo, n);
+        print(arreglo, n);
         System.out.println("tiempo de ejecucion "+endTime);
     }
  
