@@ -30,15 +30,14 @@ public class QuickSort {
 
     public static void sort(int arr[], int low, int high) {
         if (low < high) {
-            /* pi esta particionando indices, arr[pi] is  
-              now at right place */
+  
             int pi = partition(arr, low, high);
-            // Recursivamente ordena elementos antes de 
-            // la partición y despues de la partición
+          
             sort(arr, low, pi - 1);
             sort(arr, pi + 1, high);
         }
     }
+    
     /* Imprimir array */
     public static  void printArray(int arr[]) {
         int n = arr.length;
@@ -48,7 +47,7 @@ public class QuickSort {
         System.out.println();
     }
     
-	public static  int generarAleatorio() {
+	public   int generarAleatorio() {
 		int min = 1;
 		int max = 1000;
 		Random random = new Random();
@@ -59,7 +58,7 @@ public class QuickSort {
 	
 	
 
-    public static void main(String args[]) {
+    public  void funcionar() {
     	int arr[];
     	
     	Scanner sc=new Scanner (System.in);
