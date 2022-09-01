@@ -1,6 +1,9 @@
 package co.edu.unbosque.controller;
 
+
 import co.edu.unbosque.model.QuickSort;
+import co.edu.unbosque.model.Radixsort;
+import co.edu.unbosque.model.TreeSort;
 import co.edu.unbosque.view.VistaVentanas;
 import co.edu.unbosque.model.CocktailSort;
 
@@ -8,6 +11,7 @@ public class Controller {
 	
 	private VistaVentanas vista;
 	private QuickSort quick;
+
 	private CocktailSort Cocktail;
 	
 	public Controller() {
@@ -15,9 +19,11 @@ public class Controller {
 			Cocktail = new CocktailSort();
 			quick=new QuickSort();
 			funcionar();
+
 	}
 	
 	public void funcionar() {
+
 
 	
 			quick.principal();
@@ -52,6 +58,7 @@ public class Controller {
 			}
 		}else {vista.mostrarInformacionError("cantidad invalida");}
 		}
+
 
 	}
 
