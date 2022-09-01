@@ -2,6 +2,8 @@ package co.edu.unbosque.model;
 
 import java.util.ArrayList;
 
+import javax.swing.JOptionPane;
+
 public class TreeSort {
 	public static Nodo raiz;
 	public static ArrayList<Integer> retorno;
@@ -12,8 +14,15 @@ public class TreeSort {
 	}
 	
 	
-
-
+    public void ingresardatos() {
+    	int cantd= Integer.parseInt(JOptionPane.showInputDialog("ingrese el numero de datos que quiere ingresar"));
+		int array[]=new int[cantd];
+		for(int i=0;i<array.length;i++) {
+			array[i]= (int) (Math.random() * 1000) + 1;
+		}
+		for(int ele:array)
+			insertar(ele," ");
+    }
 
 	public void insertar(int i,Object numero) {
 		Nodo n=new Nodo(i);
