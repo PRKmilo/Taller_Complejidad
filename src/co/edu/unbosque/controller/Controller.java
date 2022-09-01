@@ -1,6 +1,5 @@
 package co.edu.unbosque.controller;
 
-import co.edu.unbosque.model.Numeros;
 import co.edu.unbosque.model.QuickSort;
 import co.edu.unbosque.view.VistaVentanas;
 
@@ -19,7 +18,7 @@ public class Controller {
 	
 	public void funcionar() {
 
-		quick.principal();
+		//quick.principal();
 // System.out.println(num.generarAleatorio());
  
 	System.out.println("----------------------------");
