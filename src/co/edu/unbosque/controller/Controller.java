@@ -1,6 +1,5 @@
 package co.edu.unbosque.controller;
 
-import co.edu.unbosque.model.Numeros;
 import co.edu.unbosque.model.QuickSort;
 import co.edu.unbosque.view.VistaVentanas;
 import co.edu.unbosque.model.CocktailSort;
@@ -19,6 +18,7 @@ public class Controller {
 	}
 	
 	public void funcionar() {
+
 	
 			quick.principal();
 	// System.out.println(num.generarAleatorio());
@@ -52,6 +52,7 @@ public class Controller {
 			}
 		}else {vista.mostrarInformacionError("cantidad invalida");}
 		}
+
 	}
 
 }

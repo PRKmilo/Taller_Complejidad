@@ -5,27 +5,21 @@ import java.util.Scanner;
 
 public class QuickSort {
 
-    /* Esta función toma el ultimo elemento 1como
-    pivote, coloca el pivote en la posición correcta
-    en el array ordenado, y coloca todos los más 
-    pequeñps (Más pequeños que el pivote) a la izquierda
-    del pivote, y todos los más grandes a la derecha del
-    pivote*/
-    static int partition(int arr[], int low, int high) {
+  
+    public static int partition(int arr[], int low, int high) {
         int pivot = arr[high];
-        int i = (low - 1); // Indice del elemento más pequeño
+        int i = (low - 1); 
         for (int j = low; j < high; j++) {
-            /*Si el actual elemento es más pequeño
-            p igual que el pivote*/
+
             if (arr[j] <= pivot) {
                 i++;
-                //intercambia arr[i] y arr[j] 
+           
                 int temp = arr[i];
                 arr[i] = arr[j];
                 arr[j] = temp;
             }
         }
-        // Intercambia arr[i+1] y arr[high] (o pivote) 
+  
         int temp = arr[i + 1];
         arr[i + 1] = arr[high];
         arr[high] = temp;
@@ -33,22 +27,19 @@ public class QuickSort {
         return i + 1;
     }
 
-    /*arr[] --> Array que sera ordenado, 
-      low  --> indice inicial, 
-      high  --> indice final */
-    static void sort(int arr[], int low, int high) {
+
+    public static void sort(int arr[], int low, int high) {
         if (low < high) {
-            /* pi esta particionando indices, arr[pi] is  
-              now at right place */
+  
             int pi = partition(arr, low, high);
-            // Recursivamente ordena elementos antes de 
-            // la partición y despues de la partición
+          
             sort(arr, low, pi - 1);
             sort(arr, pi + 1, high);
         }
     }
+    
     /* Imprimir array */
-    static void printArray(int arr[]) {
+    public static  void printArray(int arr[]) {
         int n = arr.length;
         for (int i = 0; i < n; ++i) {
             System.out.print(arr[i] + " ");
@@ -56,7 +47,7 @@ public class QuickSort {
         System.out.println();
     }
     
-	public static int generarAleatorio() {
+	public   int generarAleatorio() {
 		int min = 1;
 		int max = 1000;
 		Random random = new Random();
@@ -67,7 +58,7 @@ public class QuickSort {
 	
 	
 
-    public static void main(String args[]) {
+    public  void funcionar() {
     	int arr[];
     	
     	Scanner sc=new Scanner (System.in);
